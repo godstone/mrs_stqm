@@ -15,6 +15,17 @@ public class StatementTest {
     private Statement s;
     private List<Rental> rentals;
 
+    // TODO: write this
+
+    private static final class TestStatement extends Statement {
+        public TestStatement(String name, String firstName, List<Rental> rentals) {
+            super(name, firstName, rentals);
+        }
+
+        @Override
+        public String print() { return ""; }
+    }
+
     @Before
     public void setup() {
         Rental r1 = mock(Rental.class);
