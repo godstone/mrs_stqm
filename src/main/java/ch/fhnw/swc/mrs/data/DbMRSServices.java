@@ -9,7 +9,8 @@ import ch.fhnw.swc.mrs.model.Rental;
 import ch.fhnw.swc.mrs.model.User;
 
 public class DbMRSServices implements MRSServices {
-    private static final String DB_CONNECTION = "jdbc:hsqldb:mem:mrs";
+    // private static final String DB_CONNECTION = "jdbc:hsqldb:mem:mrs";
+	private static final String DB_CONNECTION = "jdbc:hsqldb:hsql://localhost:9001/stqmdb";
 	private Database db;
 	
 	private MovieDAO getMovieDAO() { 
